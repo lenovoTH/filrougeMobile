@@ -1,0 +1,41 @@
+<div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
+  <!-- Login component -->
+  <div class="shadow-md">
+
+    <!-- Login form -->
+    <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white"
+      style="width: 24rem; height: 32rem;">
+      <img class="w-full h-[20%] bg-center bg-no-repeat bg-cover rounded-r-md" src="../../assets/images/user.jpg">
+
+      <div class="w-72">
+        <!-- Heading -->
+        <h1 class="text-xl font-semibold">Welcome back</h1>
+        <small class="text-gray-400">Welcome back! Please enter your details</small>
+
+        <!-- Form -->
+        <form [formGroup]="myFormLogin" class="mt-4">
+          <div class="mb-3">
+            <label class="mb-2 block text-xs font-semibold">Login</label>
+            <input type="text" name="login" formControlName="login" placeholder="Enter your login"
+              class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-white" />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-2 block text-xs font-semibold">Password</label>
+            <input type="password" name="password" formControlName="password" placeholder="*****"
+              class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-white" />
+          </div>
+          <div class="mb-3">
+            <button type="submit" (click)=" loginUser()"
+              class="mb-1.5 block w-full text-center text-white bg-blue-300 hover:bg-purple-900 px-2 py-1.5 rounded-md">Login</button>
+          </div>
+        </form>
+
+        <!-- Footer -->
+        
+      </div>
+    </div>
+
+  </div>
+
+</div>

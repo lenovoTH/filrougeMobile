@@ -1,0 +1,23 @@
+<div class="bg-blue-200 w-[90%] h-full p-2 flex">
+
+  <div class="flex h-full w-full flex-col items-center justify-center gap-y-2">
+    <div class="w-[300px] h-full my-2 rounded-xl border border-gray-200 bg-white py-4 px-2 shadow-md shadow-gray-100">
+
+      <div class="mt-4">
+        <div class="flex max-h-[400px] w-full flex-col overflow-y-scroll" *ngFor="let cour of tabcours">
+          <button
+            class="group flex items-center gap-x-5 rounded-md px-2.5 py-2 transition-all duration-75 hover:bg-green-100">
+            <div class="flex h-12 w-12 items-center rounded-lg bg-gray-200 text-black group-hover:bg-green-200">
+              <img alt="" src="../../../assets/images/logo2.png" />
+            </div>
+            <div class="flex flex-col items-start justify-between font-light text-gray-600">
+              <p class="text-[15px]">Text</p>
+              <span class="text-xs font-light text-gray-400">just start writing with plain text</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
